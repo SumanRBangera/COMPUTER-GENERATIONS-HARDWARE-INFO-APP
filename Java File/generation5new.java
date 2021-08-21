@@ -9,9 +9,9 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 
-public class generation1 extends AppCompatActivity {
-    private Button generation11;
-    private Button generation12;
+public class generation5new extends AppCompatActivity {
+    private Button generation51;
+    private Button generation52;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,20 +20,20 @@ public class generation1 extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
 
-        setContentView(R.layout.activity_generation1);
-        generation11 =findViewById(R.id.generation11);
-        generation11.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_generation5new);
+        generation51 =findViewById(R.id.generation51);
+        generation51.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(generation1.this,generation2.class);
+                Intent intent=new Intent(generation5new.this,generationAndHardwares.class);
                 startActivity(intent);
             }
         });
-        generation12 =findViewById(R.id.generation12);
-        generation12.setOnClickListener(new View.OnClickListener() {
+        generation52 =findViewById(R.id.generation52);
+        generation52.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(generation1.this,generationAndHardwares.class);
+                Intent intent=new Intent(generation5new.this,generation4.class);
                 startActivity(intent);
             }
         });

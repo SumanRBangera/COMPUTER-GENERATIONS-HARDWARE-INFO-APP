@@ -9,9 +9,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 
-public class generation1 extends AppCompatActivity {
-    private Button generation11;
-    private Button generation12;
+public class hardware3 extends AppCompatActivity {
+    private Button hardware3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,20 +19,12 @@ public class generation1 extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
 
-        setContentView(R.layout.activity_generation1);
-        generation11 =findViewById(R.id.generation11);
-        generation11.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_hardware3);
+        hardware3 = findViewById(R.id.Hardware3);
+        hardware3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(generation1.this,generation2.class);
-                startActivity(intent);
-            }
-        });
-        generation12 =findViewById(R.id.generation12);
-        generation12.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(generation1.this,generationAndHardwares.class);
+                Intent intent=new Intent(hardware3.this,hardware4.class);
                 startActivity(intent);
             }
         });
